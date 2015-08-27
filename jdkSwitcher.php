@@ -4,6 +4,8 @@
 	$javaCur = "jdk_";
 	$java_home = "c:\\program Files\\java\\";
 
+	`taskkill /F /IM java.exe`;
+
 	if (file_exists($java_home . $java6)) {
 		rename($java_home . $javaCur, $java_home . $java8);
 		rename($java_home . $java6, $java_home . $javaCur);
